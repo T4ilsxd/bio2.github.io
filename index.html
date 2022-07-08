@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>T4ils Bio lol</title>
+	<link rel="stylesheet" href="./Css/Main.css">
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+	<meta name="theme-color" content="#5b6abf">
+	<link rel="shortcut icon" href="https://media.discordapp.net/attachments/987908231676448839/994772466448740412/soyese.jpg" type="image/x-icon">
+	<meta content="Reven" property="og:title" />
+	<meta content="My card page" property="og:description" />
+	<meta content="Nya~" name="description" />
+	<link rel="canonical" href="./index.html" />
+	<meta property="og:site_name" content="T4ils's bio" />
+	<meta property="og:image" content="https://media.discordapp.net/attachments/987908231676448839/994772466448740412/soyese.jpg">
+	<meta property="og:image:type" content="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</head>
+
+<body >
+	<div class="Notificacion">
+		<div class="Notificacion-Item">
+		  <img src="./Assets/Close.webp" alt="close" class="close">
+		  <img src="https://media.discordapp.net/attachments/987908231676448839/994772466448740412/soyese.jpg" alt="" id="avt" class="avatar">
+		  <br>
+		  <br>
+
+		  <div class="Info">
+			<p id="ng" class="Info"> </p>
+			<br>
+			<p id="act" class="Info">Close this</p>
+		</div>
+		</div>
+	  </div>
+	<div class="fullscreen">
+	
+		<div class="Wallpaper">
+			<div class="center">
+				<img src="https://media.discordapp.net/attachments/987908231676448839/994772466448740412/soyese.jpg" alt="" id="avt" class="avatar">
+				<div class="sectioninfo">
+					<h1 id="m" class="Title">T4ils xd?</h1>
+				
+					<div class="Info">
+						<p id="ng" class="Info">Hi</p>
+						<br>
+						<p id="act" class="Info">No se pagina de Testeo 😎</p>
+						<br>
+						<p id="ngg" class="Info">5/8/88 </p>
+					</div>
+
+				</div>
+				<br>
+
+
+
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+<audio src="./Assets/backs.mp3" id="backs" loop></audio>
+</body>
+<script>
+	
+
+function ambience(){
+	
+	var backs = document.getElementById("backs");
+	backs.volume = 0.20;
+	backs.play();
+	
+}
+function Abre() {
+  $("body").addClass("Abierto");
+  
+}
+function Cierra() {
+  $("body").removeClass("Abierto Quitar");
+  ambience();
+}
+function Cierraeldiv() {
+  $("body").addClass("Quitar");
+  setTimeout(closePopup, 200);
+}
+
+$(".Notificacion .close").on("click", function () {
+  Cierra();
+});
+
+Abre();
+
+
+function copyToClipboard(text) {
+  window.prompt("Copea esto con ctrl + c", text);
+}
+</script>
+</html>
